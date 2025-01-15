@@ -16,6 +16,7 @@ from typing import (
     Iterator,
     List,
     Optional,
+    Sequence,
     Set,
     Tuple,
     Type,
@@ -1607,8 +1608,9 @@ class PointsCategories(Categories):
     def from_iterable(
         cls,
         iterable: Union[
-            Tuple[int, List[str]],
-            Tuple[int, List[str], Set[Tuple[int, int]]],
+            Iterable[Sequence[int, List[str]]],
+            Iterable[Sequence[int, List[str], Set[Tuple[int, int]]]],
+            Iterable[Sequence[int, List[str], Set[Tuple[int, int]], List[Tuple[float, float]]]],
         ],
     ) -> PointsCategories:
         """
