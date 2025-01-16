@@ -1625,7 +1625,9 @@ class PointsCategories(Categories):
                 try:
                     positions = list(map(float, positions))
                 except (TypeError, ValueError):
-                    raise ValueError(f"Cannot convert {attribute.name} to list of floats. Check your input data.")
+                    raise ValueError(
+                        f"Cannot convert {attribute.name} to list of floats. Check your input data."
+                    )
                 # validate the positions
                 if len(positions) % 2 != 0:
                     raise ValueError(f"{attribute.name} must have an even number of elements")

@@ -27,7 +27,7 @@ def normalize_points(positions: list[float]) -> list[float]:
     size = max - min
 
     # Handle edge case where all keypoints are the same (zero width or height)
-    size[np.where(size==0)] = 1e-6
+    size[np.where(size == 0)] = 1e-6
 
     # Determine the scaling factor to maintain aspect ratio
     scale = size.max()
