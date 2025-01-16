@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## \[Unreleased\]
 
 ### New features
+- Add default position information to PointsCategories class
+  (<https://github.com/openvinotoolkit/datumaro/pull/1695>)
 - Convert Cuboid2D annotation to/from 3D data
   (<https://github.com/openvinotoolkit/datumaro/pull/1639>)
 - Add label groups for hierarchical classification in ImageNet
