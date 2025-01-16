@@ -718,7 +718,7 @@ def fxt_test_pointscategories_with_positions():
             index,
             labels=["label1", "label2", "label3"],
             joints=[[0, 1], [1, 2]],
-            positions=[[0, 1], [1, 2], [2, 3]]
+            positions=[0, 1, 1, 2, 2, 3]
         )
 
     return Dataset.from_iterable(
